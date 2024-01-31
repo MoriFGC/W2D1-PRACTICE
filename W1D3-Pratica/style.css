@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    padding: 50px;
+}
+
+
+/* FOTO */
+.card {
+    width: 400px;
+    height: 600px;
+    background-image: url(assets/G.O.H._Epilogue_Jin_Mori.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 50px auto;
+    border-radius: 15px;
+    border: 2px solid black;
+    position: relative;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5) ;
+    overflow: hidden;
+}
+/* SAVE BUTTON */
+.save {
+    position: absolute;
+    top: -48px;
+    right: 20px;
+    background-color: red;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    transition: top 0.5s ease-in-out;
+    cursor: pointer;
+    
+}
+
+
+.card:hover .save {
+    top: 15px;
+}
+
+/* THREE BUTTON */
+.bottom div {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 10px 15px;
+    position: absolute;
+    bottom: -60px;
+    margin-left: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: bottom 0.5s ease-in-out, opacity 0.3s ease-in-out
+}
+
+.card:hover .bottom div {
+    bottom: 20px;
+}
+
+.details {
+    right: 20px;
+}
+
+.download {
+    right: 90px;
+}  
+
+.link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+}
+
+.details:hover,
+.download:hover,
+.link:hover {
+    opacity: 1;
+}
